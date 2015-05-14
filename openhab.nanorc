@@ -1,0 +1,55 @@
+syntax "rules" ".rules"
+
+# Commands
+color cyan "\<(import|var|say|if|else|postUpdate|switch|println|case|or|sendCommand)\>"
+
+# Keywords
+color green "\<(Timer|Number|String)\>"
+color magenta "\<(rule|when|then|end)\>"
+color magenta "\<(Item|Time|System)\>"
+color magenta "\<(received|command|update|changed|from|to)\>"
+color magenta "\<(cron|is)\>"
+color magenta "\<(started|shuts|down)\>"
+color magenta "\<(name|label|item|period|refresh|icon|mapping|minValue|maxValue|step|switchsupport|url|height|playStream|setMasterVolume|increaseMasterVolume|decreaseMasterVolume)\>"
+color yellow "[:;,+*|=!\%]" "<" ">" "/" "-" "&"
+color red "(\+|-)?([0-9]+(\.[0-9]+)?)"
+color brightblue ""[^"]*""
+
+# Comments
+color brightgreen "//.*"
+color brightgreen start="/\*" end="\*/"
+color brightgreen start="/\*\*" end="\*/"
+
+syntax "sitemaps" ".sitemap"
+
+color magenta "\<(Switch|Selection|Slider|List|Setpoint|Video|Chart|Webview|Colorpicker)\>"
+color magenta "\<(Text|Group|Image|Frame)\>"
+color magenta "\<(name|label|item|period|refresh|icon|mappings|minValue|maxValue|step|switchsupport|url|height|refresh|visibility|valuecolor)\>"
+color green "\<(ON|OFF|on|off)\>"
+color red "\b([0-9]+(\.[0-9]+)?)\b"
+color yellow "[:;+*|=!\]" "<" ">" "/" "-"
+color magenta "="
+color red "[A-Z0-9\_]+="
+color brightblue ""[^"]*""
+
+# Comments
+color brightgreen "(^:)//.*"
+color brightgreen start="/\*" end="\*/"
+color brightgreen start="/\*\*" end="\*/"
+
+syntax "items" ".items"
+
+color magenta "\<(Switch|Rollershutter|Number|String|Dimmer|Contact|DateTime|Color)\>"
+color cyan "\<(AND|OR|NAND|NOR|AVG|SUM|MAX|MIN)\>"
+color green "\<(Group)\>"
+color green start="\(" end="\)"
+color brightgreen start="<" end=">"
+color brightblue ""[^"]*""
+
+# Comments
+color brightgreen "//.*"
+color brightgreen start="/\*" end="\*/"
+color brightgreen start="/\*\*" end="\*/"
+
+#Binding
+color brightcyan start="\{" end="\}"
