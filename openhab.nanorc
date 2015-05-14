@@ -11,8 +11,14 @@ color magenta "\<(received|command|update|changed|from|to)\>"
 color magenta "\<(cron|is)\>"
 color magenta "\<(started|shuts|down)\>"
 color magenta "\<(name|label|item|period|refresh|icon|mapping|minValue|maxValue|step|switchsupport|url|height|playStream|setMasterVolume|increaseMasterVolume|decreaseMasterVolume)\>"
+
+# Operators
 color yellow "[:;,+*|=!\%]" "<" ">" "/" "-" "&"
+
+# Numbers
 color red "(\+|-)?([0-9]+(\.[0-9]+)?)"
+
+# Strings
 color brightblue ""[^"]*""
 
 # Comments
@@ -22,14 +28,25 @@ color brightgreen start="/\*\*" end="\*/"
 
 syntax "sitemaps" ".sitemap"
 
+# Keywords
 color magenta "\<(Switch|Selection|Slider|List|Setpoint|Video|Chart|Webview|Colorpicker)\>"
 color magenta "\<(Text|Group|Image|Frame)\>"
 color magenta "\<(name|label|item|period|refresh|icon|mappings|minValue|maxValue|step|switchsupport|url|height|refresh|visibility|valuecolor)\>"
+
+# Commands
 color green "\<(ON|OFF|on|off)\>"
+
+# Numbers
 color red "\b([0-9]+(\.[0-9]+)?)\b"
+
+# Operators
 color yellow "[:;+*|=!\]" "<" ">" "/" "-"
 color magenta "="
+
+# Values
 color red "[A-Z0-9\_]+="
+
+# Strings
 color brightblue ""[^"]*""
 
 # Comments
@@ -39,11 +56,18 @@ color brightgreen start="/\*\*" end="\*/"
 
 syntax "items" ".items"
 
+# Keywords
 color magenta "\<(Switch|Rollershutter|Number|String|Dimmer|Contact|DateTime|Color)\>"
 color cyan "\<(AND|OR|NAND|NOR|AVG|SUM|MAX|MIN)\>"
+
+# Groups
 color green "\<(Group)\>"
 color green start="\(" end="\)"
+
+# Icons
 color brightgreen start="<" end=">"
+
+# Strings
 color brightblue ""[^"]*""
 
 # Comments
@@ -53,3 +77,17 @@ color brightgreen start="/\*\*" end="\*/"
 
 #Binding
 color brightcyan start="\{" end="\}"
+
+syntax "persistence" ".persist"
+
+# Keywords
+color magenta "\<(Strategies|Filters|Items)\>"
+color cyan "\<(strategy|strategies|default|filter)\>"
+
+# Strings
+color brightblue ""[^"]*""
+
+# Comments
+color brightgreen "//.*"
+color brightgreen start="/\*" end="\*/"
+color brightgreen start="/\*\*" end="\*/"
