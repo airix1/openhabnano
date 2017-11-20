@@ -56,6 +56,9 @@ color brightgreen start="/\*\*" end="\*/"
 
 syntax "items" ".items"
 
+# Icons
+color brightgreen start="<" end=">"
+
 # Keywords
 color magenta "\<(Switch|Rollershutter|Number|String|Dimmer|Contact|DateTime|Color)\>"
 color cyan "\<(AND|OR|NAND|NOR|AVG|SUM|MAX|MIN)\>"
@@ -63,9 +66,6 @@ color cyan "\<(AND|OR|NAND|NOR|AVG|SUM|MAX|MIN)\>"
 # Groups
 color green "\<(Group)\>"
 color green start="\(" end="\)"
-
-# Icons
-color brightgreen start="<" end=">"
 
 # Strings
 color brightblue ""[^"]*""
