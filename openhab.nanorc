@@ -78,6 +78,9 @@ color brightgreen start="/\*\*" end="\*/"
 #Binding
 color brightcyan start="\{" end="\}"
 
+#Tags
+color yellow start="\[" end="\]"
+
 syntax "persistence" ".persist"
 
 # Keywords
@@ -86,6 +89,23 @@ color cyan "\<(strategy|strategies|default|filter)\>"
 
 # Strings
 color brightblue ""[^"]*""
+
+# Comments
+color brightgreen "//.*"
+color brightgreen start="/\*" end="\*/"
+color brightgreen start="/\*\*" end="\*/"
+
+syntax "things" ".things"
+
+# Keywords
+color magenta "\<(State|Trigger|Topic|Switch|Rollershutter|Number|String|Dimmer|Contact|DateTime|Color)\>"
+color green "\<(Bridge|Thing|Channels|Type)\>"
+color yellow "\<(topic|switch|rollershutter|number|string|dimmer|contact|datetime|color)\>"
+# Strings
+color brightblue ""[^"]*""
+
+#Parameters
+color cyan start="\[" end="\]"
 
 # Comments
 color brightgreen "//.*"
