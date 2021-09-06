@@ -67,6 +67,9 @@ color cyan "\<(AND|OR|NAND|NOR|AVG|SUM|MAX|MIN)\>"
 color green "\<(Group)\>"
 color green start="\(" end="\)"
 
+#Tags
+color yellow start="\[" end="\]"
+
 # Strings
 color brightblue ""[^"]*""
 
@@ -77,9 +80,6 @@ color brightgreen start="/\*\*" end="\*/"
 
 #Binding
 color brightcyan start="\{" end="\}"
-
-#Tags
-color yellow start="\[" end="\]"
 
 syntax "persistence" ".persist"
 
