@@ -9,5 +9,5 @@ Then simply add the openhab.nanorc file to your ~/.nanorc or /etc/nanorc file
 ie: 
 ````
     ## Openhab
-    include /usr/share/nano/openhab.nanorc
+    include "/usr/share/nano/openhab.nanorc"
 ````
