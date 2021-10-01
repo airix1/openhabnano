@@ -104,10 +104,10 @@ color yellow "\<(topic|switch|rollershutter|number|string|dimmer|contact|datetim
 # Strings
 color brightblue ""[^"]*""
 
-#Parameters
-color cyan start="\[" end="\]"
-
 # Comments
 color brightgreen "//.*"
 color brightgreen start="/\*" end="\*/"
 color brightgreen start="/\*\*" end="\*/"
+
+#Parameters
+color cyan start="\[" end="\]"
