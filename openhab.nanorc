@@ -29,7 +29,7 @@ color brightgreen start="/\*\*" end="\*/"
 syntax "sitemaps" ".sitemap"
 
 # Keywords
-color magenta "\<(Switch|Selection|Slider|List|Setpoint|Video|Chart|Webview|Colorpicker)\>"
+color magenta "\<(Switch|Selection|Slider|List|Setpoint|Video|Chart|Webview|Colorpicker|Default|Mapview)\>"
 color magenta "\<(Text|Group|Image|Frame)\>"
 color magenta "\<(name|label|item|period|refresh|icon|mappings|minValue|maxValue|step|switchsupport|url|height|refresh|visibility|valuecolor)\>"
 
@@ -60,7 +60,7 @@ syntax "items" ".items"
 color brightgreen start="<" end=">"
 
 # Keywords
-color magenta "\<(Switch|Rollershutter|Number|String|Dimmer|Contact|DateTime|Color)\>"
+color magenta "\<(Switch|Rollershutter|Number|String|Dimmer|Contact|DateTime|Color|Player|Group|Image|Location)\>"
 color cyan "\<(AND|OR|NAND|NOR|AVG|SUM|MAX|MIN)\>"
 
 # Groups
