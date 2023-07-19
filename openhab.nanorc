@@ -31,7 +31,7 @@ syntax "sitemaps" ".sitemap"
 # Keywords
 color magenta "\<(Switch|Selection|Slider|List|Setpoint|Video|Chart|Webview|Colorpicker|Default|Mapview|Input)\>"
 color magenta "\<(Text|Group|Image|Frame)\>"
-color magenta "\<(name|label|item|period|refresh|icon|mappings|minValue|maxValue|step|switchsupport|url|height|refresh|visibility|valuecolor|inputHint)\>"
+color magenta "\<(name|label|item|period|refresh|icon|mappings|minValue|maxValue|step|switchsupport|url|height|refresh|visibility|labelcolor|valuecolor|iconcolor|inputHint)\>"
 
 # Commands
 color green "\<(ON|OFF|on|off)\>"
